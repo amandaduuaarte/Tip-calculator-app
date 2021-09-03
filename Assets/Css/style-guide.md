@@ -8,7 +8,10 @@ The designs were created to the following widths:
 - Desktop: 1440px
 
 ## Colors
-
+### Ex:
+- hsl(276, 16%, 41%)
+- hsl(213, 36%, 32%)
+- hsl(347, 35%, 55%)
 ### Primary
 
 - Strong cyan: hsl(172, 67%, 45%)
