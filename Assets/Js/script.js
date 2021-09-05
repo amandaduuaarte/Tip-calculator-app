@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let bill = document.getElementById('bill')
 let tip = document.getElementsByName('tipValue')
 let numberOfPeople = document.getElementById('people')
@@ -43,3 +44,5 @@ customTip.addEventListener('focusout', () =>{
     operation = operation.toFixed(2)
     //tipAmount(operation)
 })
+=======
+>>>>>>> parent of b18ba73... Tip algorithm
