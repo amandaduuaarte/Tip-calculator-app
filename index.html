@@ -24,22 +24,34 @@
             <input class="form-input" id="bill" type="number" name="bill" value=""/>
             
             <label for="tip"> Selecione a gorjeta %</label>
-            <button class="form-btn" type="submit" value="5">5%</button>
-            <button class="form-btn"  type="submit" value="10">10%</button>
-            <button class="form-btn"type="submit" value="15">15%</button>
-            <button class="form-btn"  type="submit" value="25">25%</button>
-            <button class="form-btn"  type="submit" value="50">50%</button>
+            <label for="tip5%">5%</label>
+            <input type="radio" id="tip5%"
+           name="tipValue" value="5">
+           <label for="tip10%">10%</label>
+           <input type="radio" id="tip10%"
+           name="tipValue" value="10">
+           <label for="tip15%">15%</label>
+           <input type="radio" id="tip15%"
+           name="tipValue" value="15">
+           <label for="tip25%">25%</label>
+           <input type="radio" id="tip25%"
+           name="tipValue" value="25">
+           <label for="tip50%">50%</label>
+           <input type="radio" id="tip50%"
+           name="tipValue" value="50">
             <input class="form-input" id="tip" type="number" name="tip" placeholder="custom"value=""/>
             <label class="form-label" for="people">Número de pessoas:</label>
-            <input class="form-input" id="people" type="number"/>-->
+            <input class="form-input" id="people" type="number" value=""/>
           </form>
           <section class="info-section">
             <span class="info-texts"> 
-              Valor da gorjeta: 
+              Valor da gorjeta: <p class="info-texts" id="tipAmount">
+
+              </p>
              /Pessoa 
             </span>
             <span class="info-texts">
-              Total:
+              Total: <p class="info-texts" id="tipPeople"></p>
               /Pessoa
               </span>
           </section>
