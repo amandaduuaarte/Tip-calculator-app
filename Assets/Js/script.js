@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let bill = document.getElementById('bill')
 let tip = document.getElementsByName('tipValue')
 let numberOfPeople = document.getElementById('people')
@@ -11,9 +10,7 @@ function amount(arrayTip){
   operation = bill.value * (tipType/100)
   operation = operation.toFixed(2)  
   let calculated = numberOfPeople.value != 0 && numberOfPeople.value >1
-  
-    if (calculated) {
-  let tipForPerson = (operation)/numberOfPeople.value
+  if (calculated) {
   tipAmountNumber.innerHTML = operation 
   }else{
   alert(operation)
@@ -42,7 +39,5 @@ customTip.addEventListener('focusout', () =>{
     type = parseInt(customTip.value);
      operation = bill.value * (type/100)
     operation = operation.toFixed(2)
-    //tipAmount(operation)
+    tipAmount(operation)
 })
-=======
->>>>>>> parent of b18ba73... Tip algorithm
