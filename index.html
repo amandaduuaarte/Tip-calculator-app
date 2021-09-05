@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css">
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -41,17 +41,16 @@
            name="tipValue" value="50">
             <input class="form-input" id="tip" type="number" name="tip" placeholder="custom"value=""/>
             <label class="form-label" for="people">Número de pessoas:</label>
-            <input class="form-input" id="people" type="number" value=""/>
+            <input class="form-input" id="people" type="number"/>
           </form>
           <section class="info-section">
             <span class="info-texts"> 
-              Valor da gorjeta: <p class="info-texts" id="tipAmount">
-
-              </p>
+              Valor da gorjeta: <p id="tipPeople"></p>
+              <p id="tipAlone"></p>
              /Pessoa 
             </span>
             <span class="info-texts">
-              Total: <p class="info-texts" id="tipPeople"></p>
+              Total:
               /Pessoa
               </span>
           </section>
@@ -63,6 +62,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+  <script type="text/javascript" src="Assets/Js/script.js"></script>
 </body>
 </html>
 

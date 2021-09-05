@@ -2,6 +2,7 @@ let bill = document.getElementById('bill')
 let tip = document.getElementsByName('tipValue')
 let numberOfPeople = document.getElementById('people')
 let tipAmountNumber = document.getElementById('tipPeople')
+let tipAmountAlone = document.getElementById('tipAlone')
 let customTip = document.getElementById('tip')
 let operation
 
@@ -13,7 +14,7 @@ function amount(arrayTip){
   if (calculated) {
   tipAmountNumber.innerHTML = operation 
   }else{
-  alert(operation)
+    tipAmountAlone.innerHTML = operation 
   }
 }
 
