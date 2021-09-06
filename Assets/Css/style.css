@@ -1,5 +1,39 @@
 * {
-  background-color: #f4fafa;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: #7f9c9f;
+  align-tracks: center;
+}
+body main {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 380px;
+  width: 750px;
+  border-radius: 15px;
+  margin-top: 10%;
+  justify-self: flex-start;
+}
+body main .info-section {
+  justify-self: flex-end;
+  height: 320px;
+  width: 300px;
+  background-color: #344f6f;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: #3e52a3;
 }
 
 /*# sourceMappingURL=style.css.map */
