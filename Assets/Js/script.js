@@ -39,6 +39,6 @@ tip[4].addEventListener('click',()=>{
 customTip.addEventListener('focusout', () =>{
     type = parseInt(customTip.value);
      operation = bill.value * (type/100)
-    operation = operation.toFixed(2)
-    tipAmount(operation)
+    //  console.log(typeof(operation))
+     tipAmountNumber.innerHTML = operation 
 })
