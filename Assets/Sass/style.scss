@@ -1,39 +1,80 @@
 @use 'colors';
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 *{
-    
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; 
     flex-direction: column;
+    font-family: 'Space Mono', monospace;
 }
 body{
     background-color: colors.$Dark-grayish-cyan;
     align-tracks: center;
 
 main{
-    display: flex;
-    background-color: colors.$White;
-    flex-direction: column;
-    height: 380px;
-    width: 750px;
-    border-radius:15px;
-    margin-top:10%;
-    justify-self: flex-start;
+    background-color:colors.$White;
+    height: 400px;
+    width:800px;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content:space-between;
 
-    .info-section{
-        justify-self: flex-end;
-        height: 320px;
-        width:300px;
-        background-color: colors.$primary-color;
-        border-radius: 10px;
-        margin-left: 25px;
+    .tipAmount{
+        display: flex;
+        height:370px;
+        width:370px;
+        background-color: colors.$Very-dark-cyan;
+        margin-right: 30px;
+        border-radius: 15px;
+        
+        span{
+            align-self: flex-start;
+            font-size:12px;
+            margin: 2px 0px 0px 20px;
+            font-weight:bold;
+            flex-direction:row;
+        }
+        .tip-text{
+        align-self: right;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left:80px;
+        }
     }
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+        }
+   
 }
-
-
-
+    .info-texts{
+    color: colors.$text-color-secondary;
+    text-align:left;
+    }
+    .form-label{
+    color: colors.$Dark-grayish-cyan;
+    }
+    #tipPeople{
+    color: colors.$Dark-grayish-cyan;
+    }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
+ // display: flex;
+    // background-color: colors.$White;
+    // flex-direction: column;
+    // height: 380px;
+    // width: 680px;
+    // border-radius:15px;
+    // margin-top:10%;
+    // justify-self: flex-start;
+    // .container{
+    //     height: 380px;
+    //     width:300px;
+    // }
+    // .info-section{
+    //     height: 300px;
+    //     width:300px;
+    //     background-color: colors.$primary-color;
+    //     border-radius: 10px;
+    //     margin-left: 25px;
+    // }
+    // }

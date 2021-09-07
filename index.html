@@ -5,31 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./Assets/Css/style.css">
+  <link rel="stylesheet" type="text/css" href="./Assets/Css/form.css">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <h1> Divisor: </h1>
     <main>
-      <h1> Divisor: </h1>
-        <div>
-          <form action="" method="get" id="form"> 
+      <form action="" method="get" id="form"> 
+        <label class="form-label"for="bill"> Conta:</label>
+         <input class="form-input" id="bill" type="number" name="bill"/>
+         <label for="tip"> Selecione a gorjeta %</label>
+         <!-- <label for="tip5%">5%</label>
+         <input type="radio" id="tip5%"
+        name="tipValue" value="5">
+        <label for="tip10%">
+          <input type="radio" id="tip10%"name="tipValue" value="10">
+          <span>10%</span>
+       </label> 
+        <label for="tip15%">15%</label>
+        <input type="radio" id="tip15%"
+        name="tipValue" value="15"> -->
+        <label for="tip25%">25%</label>
+        <input type="radio" id="tip25%"
+        name="tipValue" value="25">
+        <label for="tip50%">50%</label>
+        <input type="radio" id="tip50%"
+        name="tipValue" value="50"> 
+         <input class="form-input" id="tip" type="number" name="tip" placeholder="custom"value=""/>
+         <label class="form-label" for="people">Número de pessoas:</label>
+         <input class="form-input" id="people" type="number"/>
+       </form>
+       <div class="tipAmount">
+        <span class="info-texts"> 
+          Valor da gorjeta:
+          <br>
+          /Pessoa 
+          <p class="tip-text" id="tipPeople"> $ 0.00</p>
+        
+          <span class="info-texts"> 
+            Total:
+            <br>
+            /Pessoa 
+            <p class="tip-text" id="tipPeople"> $ 0.00</p>
+  
+          </span>
+          <button class="form-btn" type="submit" value="reset" for="form">Apagar</button>
+       </div>
+    </main>  
+    <!-- <footer  class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer> -->
+  <script type="text/javascript" src="Assets/Js/script.js"></script>
+</body>
+</html>
 
-            <label class="form-label"for="bill"> Conta:</label>
+ <!-- <div class="container">
+          <form action="" method="get" id="form"> 
+           <label class="form-label"for="bill"> Conta:</label>
             <input class="form-input" id="bill" type="number" name="bill"/>
             <label for="tip"> Selecione a gorjeta %</label>
-            
+             <div class="tipValue">
             <label for="tip5%">5%</label>
             <input type="radio" id="tip5%"
            name="tipValue" value="5">
-           <label for="tip10%">10%</label>
-           <input type="radio" id="tip10%"
-           name="tipValue" value="10">
+          </div>
+           <div class="tipValue">
+           <label for="tip10%">
+             <input type="radio" id="tip10%"name="tipValue" value="10">
+             <span>10%</span>
+          </label> 
+           </div>
            <label for="tip15%">15%</label>
            <input type="radio" id="tip15%"
            name="tipValue" value="15">
@@ -38,12 +87,13 @@
            name="tipValue" value="25">
            <label for="tip50%">50%</label>
            <input type="radio" id="tip50%"
-           name="tipValue" value="50">
+           name="tipValue" value="50"> 
             <input class="form-input" id="tip" type="number" name="tip" placeholder="custom"value=""/>
             <label class="form-label" for="people">Número de pessoas:</label>
             <input class="form-input" id="people" type="number"/>
           </form>
-          <section class="info-section">
+        </div>
+          <div class="info-section">
             <span class="info-texts"> 
               Valor da gorjeta:
               <p id="tipPeople"></p>
@@ -54,21 +104,10 @@
               Total:
               /Pessoa
               </span>
-          </section>
-          <button class="form-btn" type="submit" value="reset" for="form">Apagar</button>
-        </div>
-
-    </main>  
-    <footer  class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-  <script type="text/javascript" src="Assets/Js/script.js"></script>
-</body>
-</html>
-
-
-Bill
+              <button class="form-btn" type="submit" value="reset" for="form">Apagar</button>
+        
+        </div> -->
+<!-- Bill
           
   Select Tip %
   5%
@@ -86,4 +125,4 @@ Bill
   Total
   / person
 
-  Reset
+  Reset -->
