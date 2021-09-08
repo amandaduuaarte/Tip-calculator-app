@@ -10,23 +10,28 @@
     font-family: 'Space Mono', monospace;
 }
 body{
-    background-color: colors.$Dark-grayish-cyan;
-    align-tracks: center;
+    background-color: colors.$Light-cyan;
+    align-content: center;
+    h1{
+        color: colors.$Very-dark-cyan;
+        margin-bottom: 5px;
+    }
 
 main{
     background-color:colors.$White;
-    height: 400px;
-    width:800px;
+    height: 380px;
+    width:780px;
     border-radius: 15px;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding-top: 10px;
 
     .tipAmount{
         display: flex;
-        height:370px;
+        height:360px;
         width:370px;
         background-color: colors.$Very-dark-cyan;
-        margin-right: 30px;
+        margin-right: 20px;
         border-radius: 15px;
         
         span{
@@ -60,26 +65,12 @@ main{
     }
     .form-label{
     color: colors.$Dark-grayish-cyan;
+    margin-bottom:5px;
     }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } 
- // display: flex;
-    // background-color: colors.$White;
-    // flex-direction: column;
-    // height: 380px;
-    // width: 680px;
-    // border-radius:15px;
-    // margin-top:10%;
-    // justify-self: flex-start;
-    // .container{
-    //     height: 380px;
-    //     width:300px;
-    // }
-    // .info-section{
-    //     height: 300px;
-    //     width:300px;
-    //     background-color: colors.$primary-color;
-    //     border-radius: 10px;
-    //     margin-left: 25px;
-    // }
-    // }
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    } 
+ 

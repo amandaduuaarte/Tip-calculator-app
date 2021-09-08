@@ -10,17 +10,16 @@ function amount(arrayTip){
   let tipType = arrayTip.value
   operation = bill.value * (tipType/100)
   operation = operation.toFixed(2)  
-  let calculated = numberOfPeople.value != 0 && numberOfPeople.value >1
-  // if (calculated) {
-  //  tipAmountNumber.innerHTML =  '$' + operation 
-  // }else{
-  //   tipAmountAlone.innerHTML =  '$' + operation 
-  // }
-  
-  // Fazer uma verificação se o bill tem duas casas decimais 
-  // se nao tiver tenho que adicionar para nao bugar o css; 
-  tipAmountNumber.innerHTML =  '$' + operation ;
-  tipAmountAlone.innerHTML = '$' + bill.value;
+  let calculated = numberOfPeople.value != 0 && numberOfPeople.value >1;
+    if (calculated) {
+      let peopleAmount = (bill.value)/ numberOfPeople.value;
+      tipAmountNumber.innerHTML = '$' + (operation/numberOfPeople.value)
+   tipAmountAlone.innerHTML =  '$' + peopleAmount 
+
+    }else{
+      tipAmountNumber.innerHTML = '$' + operation;
+      tipAmountAlone.innerHTML = '$' + bill.value;
+  }
 }
 
 tip[0].addEventListener('click',()=>{
@@ -43,7 +42,9 @@ tip[4].addEventListener('click',()=>{
 // -------------- Custom ---------------
 customTip.addEventListener('focusout', () =>{
     type = parseInt(customTip.value);
-     operation = bill.value * (type/100)
+     operation = bill.value * (type/100);
     //  console.log(typeof(operation))
-    tipAmountAlone.innerHTML = operation 
-})
+    tipAmountNumber.innerHTML = operation 
+    })
+
+    // Preciso fazer a função execultar a cada atualização no valor 

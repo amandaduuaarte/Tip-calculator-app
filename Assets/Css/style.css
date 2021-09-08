@@ -9,23 +9,28 @@
 }
 
 body {
-  background-color: #7f9c9f;
-  align-tracks: center;
+  background-color: #c5e4e7;
+  align-content: center;
+}
+body h1 {
+  color: #00494d;
+  margin-bottom: 5px;
 }
 body main {
   background-color: white;
-  height: 400px;
-  width: 800px;
+  height: 380px;
+  width: 780px;
   border-radius: 15px;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
 }
 body main .tipAmount {
   display: flex;
-  height: 370px;
+  height: 360px;
   width: 370px;
   background-color: #00494d;
-  margin-right: 30px;
+  margin-right: 20px;
   border-radius: 15px;
 }
 body main .tipAmount span {
@@ -57,6 +62,7 @@ body main .tipAmount .tip-text {
 
 .form-label {
   color: #7f9c9f;
+  margin-bottom: 5px;
 }
 
 .attribution {

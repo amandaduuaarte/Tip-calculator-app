@@ -5,14 +5,15 @@ form {
 }
 form input {
   border: none;
-  background-color: #b46475;
+  background-color: #c5e4e7;
   height: 25px;
-  width: 250px;
+  width: 280px;
   text-align: right;
   border-radius: 2px;
   color: #00494d;
   font-size: 18px;
   font-weight: bold;
+  align-self: flex-start;
 }
 form .tipValue {
   align-items: center;
@@ -39,6 +40,58 @@ form .tipValue {
 
 .form-btn:hover {
   background-color: #c5e4e7;
+}
+
+.form-label {
+  font-size: 13px;
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+.inputs-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.inputs-radio [type=radio] {
+  display: none;
+  width: 30px;
+  height: 10px;
+  margin: 1px 0px 0 -30px;
+  cursor: pointer;
+  border-radius: 20%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.inputs-radio label {
+  display: inline-block;
+  background-color: #00494d;
+  height: 33px;
+  width: 85px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.inputs-radio input[type=radio]:checked {
+  background-color: red;
+}
+
+#tip {
+  text-align: center;
+  height: 33px;
+  width: 84px;
+  background-color: #c5e4e7;
+  margin-top: 2px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=form.css.map */
