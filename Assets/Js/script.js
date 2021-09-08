@@ -11,11 +11,16 @@ function amount(arrayTip){
   operation = bill.value * (tipType/100)
   operation = operation.toFixed(2)  
   let calculated = numberOfPeople.value != 0 && numberOfPeople.value >1
-  if (calculated) {
-  tipAmountNumber.innerHTML = operation 
-  }else{
-    tipAmountAlone.innerHTML = operation 
-  }
+  // if (calculated) {
+  //  tipAmountNumber.innerHTML =  '$' + operation 
+  // }else{
+  //   tipAmountAlone.innerHTML =  '$' + operation 
+  // }
+  
+  // Fazer uma verificação se o bill tem duas casas decimais 
+  // se nao tiver tenho que adicionar para nao bugar o css; 
+  tipAmountNumber.innerHTML =  '$' + operation ;
+  tipAmountAlone.innerHTML = '$' + bill.value;
 }
 
 tip[0].addEventListener('click',()=>{
@@ -40,5 +45,5 @@ customTip.addEventListener('focusout', () =>{
     type = parseInt(customTip.value);
      operation = bill.value * (type/100)
     //  console.log(typeof(operation))
-     tipAmountNumber.innerHTML = operation 
+    tipAmountAlone.innerHTML = operation 
 })

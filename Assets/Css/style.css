@@ -34,6 +34,14 @@ body main .tipAmount span {
   margin: 2px 0px 0px 20px;
   font-weight: bold;
   flex-direction: row;
+  color: white;
+}
+body main .tipAmount #tipAlone {
+  margin-left: 150px;
+  color: #26c0ab;
+}
+body main .tipAmount #tipPeople {
+  color: #26c0ab;
 }
 body main .tipAmount .tip-text {
   align-self: right;
@@ -48,10 +56,6 @@ body main .tipAmount .tip-text {
 }
 
 .form-label {
-  color: #7f9c9f;
-}
-
-#tipPeople {
   color: #7f9c9f;
 }
 
