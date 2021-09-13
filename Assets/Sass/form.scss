@@ -81,9 +81,9 @@ form{
     font-weight: bold;
     border-radius: 5px;
 }
-    .inputs-radio input[type='radio']:checked{
-        background-color: red;
-    }
+.inputs-radio label:checked{
+    background-color:colors.$color;
+}
 #tip{
     text-align: center;
     height:33px;

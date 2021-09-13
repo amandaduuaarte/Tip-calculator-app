@@ -10,7 +10,7 @@
     font-family: 'Space Mono', monospace;
 }
 body{
-    background-color: colors.$Light-cyan;
+    background-color: colors.$Strong-cyan;
     align-content: center;
     h1{
         color: colors.$Very-dark-cyan;
@@ -27,7 +27,7 @@ main{
     padding-top: 10px;
 
     .tipAmount{
-        display: flex;
+        display: flex; // colocar block
         height:360px;
         width:370px;
         background-color: colors.$Very-dark-cyan;
